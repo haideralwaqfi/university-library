@@ -1,6 +1,12 @@
 import React from "react";
 
-function BookList() {
+interface Props {
+  title: string;
+  books: Book[];
+  containerClassName?: string;
+}
+
+function BookList({ title, books, containerClassName }: Props) {
   return (
     <section className="font-bebas-neue text-4xl text-light-100">
       Popular Books
